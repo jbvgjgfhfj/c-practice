@@ -7,13 +7,12 @@ scanf("%d",&number);
 int *p=malloc(number*sizeof(int));
 for(int i=0;i<=number-1;i++){
     printf("please cin your score:  \n");
-scanf("%d",&a);
-sum+=a;
+scanf("%d",p);
+sum+=p[i];
 }
 double average;
-average=1.0*sum/number;
-printf("your number is%d.\nyour average is%d",number ,average);
-
+average=sum/number;
+printf("your number is %d.\nyour sum is %d\nyour average is %d\n",number ,sum,average);
+for (int c=0;c<=number;p[c]);
 return 0;
-
 }
